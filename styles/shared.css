@@ -2,5 +2,70 @@
   Title: shared.css
   Author: Ngi Bujri
   Date: 3 February 2023
-  Description: shared styles
+  Description: styles shared across pages
 */
+
+/* colors */
+:root {
+  --light-green: #14e956;
+  --off-white: #f5f5f5;
+  --dark-blue: #1a2b3a;
+  --dark-green: #090f14;
+}
+
+/* remove default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-blue);
+}
+
+.header {
+  background-color: var(--dark-green);
+  width: 100%;
+  display: flex;
+  /* stack logo atop of links */
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.logo {
+  font-size: 24px;
+  color: var(--light-green);
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin-top: 18px;
+}
+
+.nav-link {
+  color: var(--light-green);
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--dark-green);
+  color: var(--light-green);
+  width: 100%;
+  /* set to bottom */
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding: 6px 0;
+}
+
+.footer a {
+  color: var(--light-green);
+}
