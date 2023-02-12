@@ -20,11 +20,17 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: var(--dark-blue);
 }
 
 .container {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -68,7 +74,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 6px 0;
-  align-self: flex-end;
+  border-top: 1px solid var(--light-green);
 }
 
 .quick-links {
