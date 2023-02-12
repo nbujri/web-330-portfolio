@@ -9,8 +9,18 @@ class Footer extends HTMLElement {
 
     const footer = `
     <footer class="footer">
-      <div>
-        Developed by <a href="https://github.com/nbujri/web-330-portfolio" target="_blank">Ngi Bujri</a>
+      <div class="footer-left">
+        <div class="quick-links">
+          <a href="https://github.com/nbujri?tab=repositories" target="_blank">My GitHub Repositories</a>
+          <a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">Bellevue University Web Development Degree</a>
+          <a href="https://www.youtube.com/@bellevueuniversity" target="_blank">Bellevue University YouTube</a>
+          <a href="https://github.com/buwebdev" target="_blank">Bellevue University GitHub</a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="credit">
+          Developed by Ngi Bujri
+        </div>
       </div>
     </footer>
     `;

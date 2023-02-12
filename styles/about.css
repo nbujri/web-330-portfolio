@@ -1,0 +1,19 @@
+/* 
+  Title: about.css
+  Author: Ngi Bujri
+  Date: 3 February 2023
+*/
+
+h1 {
+  background-color: var(--dark-green);
+  width: 100%;
+  text-align: center;
+  margin: 50px 0;
+  color: var(--off-white);
+}
+
+.footer {
+  /* set footer to bottom of page */
+  position: absolute;
+  bottom: 0;
+}

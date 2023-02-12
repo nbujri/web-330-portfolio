@@ -24,6 +24,11 @@ body {
   background-color: var(--dark-blue);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   background-color: var(--dark-green);
   width: 100%;
@@ -52,18 +57,32 @@ body {
 
 .nav-link:hover {
   text-decoration: underline;
+  color: var(--off-white);
 }
 
 .footer {
   background-color: var(--dark-green);
   color: var(--light-green);
+  height: 100px;
   width: 100%;
-  /* set to bottom */
-  position: absolute;
-  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 6px 0;
+  align-self: flex-end;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-evenly;
+  text-align: center;
+  height: 100%;
+}
+
+.footer-right {
   display: flex;
   justify-content: center;
-  padding: 6px 0;
+  align-items: center;
 }
 
 .footer a {
