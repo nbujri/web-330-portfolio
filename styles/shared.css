@@ -74,10 +74,12 @@ page-footer {
 .footer {
   background-color: var(--dark-green);
   color: var(--light-green);
-  height: 100px;
+  height: fit-content;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
   padding: 6px 0;
   border-top: 1px solid var(--light-green);
 }
@@ -87,13 +89,24 @@ page-footer {
   grid-template-columns: 1fr 1fr;
   align-content: space-evenly;
   text-align: center;
+  gap: 16px;
   height: 100%;
 }
 
-.footer-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.footer-top {
+  padding-top: 10px;
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+
+.footer-bottom {
+  grid-row: 2;
+  grid-column: 1 / 3;
+}
+
+.credit {
+  padding-top: 20px;
+  text-align: center;
 }
 
 .footer a {
