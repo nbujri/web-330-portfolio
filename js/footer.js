@@ -18,9 +18,9 @@ class Footer extends HTMLElement {
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="credit">
+        <p class="credit">
           Developed by Ngi Bujri
-        </div>
+        </p>
       </div>
     </footer>
     `;

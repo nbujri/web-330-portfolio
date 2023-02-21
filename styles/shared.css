@@ -5,6 +5,9 @@
   Description: styles shared across pages
 */
 
+/* google fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@400;900&display=swap");
+
 /* colors */
 :root {
   --light-green: #14e956;
@@ -27,6 +30,17 @@ body {
 
 body {
   background-color: var(--dark-blue);
+}
+
+h1,
+h2,
+a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Roboto Mono", monospace;
 }
 
 .container {
