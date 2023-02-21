@@ -6,8 +6,10 @@
 class Header extends HTMLElement {
   constructor() {
     super();
+  }
 
-    const header = `
+  connectedCallback() {
+    this.innerHTML = `
     <header class="header">
       <h1 class="logo">Ngi Bujri</h1>
       <nav class="nav-links">
@@ -21,8 +23,6 @@ class Header extends HTMLElement {
       </nav>
     </header>
     `;
-
-    this.innerHTML = header;
   }
 }
 
