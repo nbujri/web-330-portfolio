@@ -87,35 +87,3 @@ hr {
   color: var(--off-white);
   text-decoration: underline;
 }
-
-/* grid item placements */
-/* make an arch*/
-.web-231 {
-  /* top left */
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-}
-
-.web-330 {
-  /* top middle */
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.web-420 {
-  /* top right */
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-.web-425 {
-  /* bottom left */
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
-}
-
-.web-450 {
-  /* bottom right */
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
